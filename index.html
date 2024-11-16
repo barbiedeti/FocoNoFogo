@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foco no Fogo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico"/>
+</head>
+<body>
+    <header>
+        <h1>🔥 Foco no Fogo</h1>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Relatar Incêndio</h2>
+            <p class="info-text">Para emergência ligue <strong>193</strong>. Clique no botão abaixo.</p> 
+            <form id="fire-report-form"> 
+                <button type="submit" id="report-button">Ligar para 193</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Denúncia Anônima</h2>
+            <p class="info-text">Denuncie incêndios criminosos.
+                Você salva vidas, animais e o meio ambiente.</p>
+            <form id="anonymous-report-form">
+                <label for="anon-description">Sua informação salva</label>
+                <textarea id="anon-description" name="description"></textarea>
+                <label for="state">Selecione o Estado</label>
+                <select id="state" name="state" required>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+                </select>
+                <button type="submit">Denunciar Anonimamente</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Focos de Fogo</h2>
+            <div id="map" style="height: 500px;"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 - Foco no Fogo</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
