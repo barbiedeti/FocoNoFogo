@@ -1,19 +1,21 @@
 document.getElementById('fire-report-form').addEventListener('submit', async function(event) {
     event.preventDefault();
 
+    const description = document.getElementById('fire-report-form').value;
+
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(async function(position) {
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
 
-            const response = await fetch('http://127.0.0.1:8000/report_fire', {
+            const response = await fetch('http://127.0.0.1:8000/twilio_redirect', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
                     location: { latitude, longitude },
-                    description
+                    description // inclui descrição
                 })
             });
 
@@ -48,10 +50,10 @@ document.getElementById('anonymous-report-form').addEventListener('submit', asyn
 });
 
 // Inicializar o map
-var map = L.map('map').setView([-14.2350, -51.9253], 4);
+const map = L.map('map').setView([-14.2350, -51.9253], 4);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Contributors',
     maxZoom: 18,
 }).addTo(map);
 
