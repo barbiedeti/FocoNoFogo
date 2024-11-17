@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foco no Fogo</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="appfogo/appfogo/frontend/favicon.ico"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
     <header>
@@ -25,7 +27,7 @@
             <p class="info-text">Denuncie incêndios criminosos.
                 Você salva vidas, animais e o meio ambiente.</p>
             <form id="anonymous-report-form">
-                <label for="anon-description">Sua informação salva</label>
+                <label for="anon-description">Denuncie Já</label>
                 <textarea id="anon-description" name="description"></textarea>
                 <label for="state">Selecione o Estado</label>
                 <select id="state" name="state" required>
@@ -64,13 +66,13 @@
 
         <section>
             <h2>Focos de Fogo</h2>
-            <div id="map" style="height: 500px;"></div>
+            <div id="map"></div>
         </section>
     </main>
     <footer>
-        <p>© 2024 - Foco no Fogo</p>
+        <p>© Todos dos direitos reservados - 2024 - Foco no Fogo</p>
     </footer>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
