@@ -1,7 +1,7 @@
 # Foco No Fogo
 *Status atual: Corrigindo bugs de mapa* 💚
 
-#Descrição
+# Descrição
 
 O Foco no Fogo é um aplicativo desenvolvido para ajudar no combate aos incêndios no Brasil, permitindo que cidadãos possam relatar focos de fogo, tanto em emergências quanto como denúncias anônimas. Utilizando tecnologias de geolocalização, o sistema facilita a identificação e o monitoramento de incêndios em tempo real, com o objetivo de proteger o meio ambiente, a fauna e a flora, além de colaborar com as autoridades no combate a incêndios florestais e urbanos.
 
