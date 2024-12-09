@@ -4,7 +4,7 @@
 # Como doar:
 
 	1.	Pix: Envie para f1d8f782-5046-4306-825b-27faa53bc7d4
-	2.	Monero Coin: 49PcSRRhooqU9Q1dxvCt5S4uSoKwoE4MWdFkceS591fnLoNGMdD33UzGF44a5q4MUUDikufqvPnnYKYVH9wqfFTe6k58uiu
+	
  
 # Descrição
 
